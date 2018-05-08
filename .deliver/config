@@ -1,11 +1,12 @@
-APP="hotswap_umbrella"
+APP="hotswap"
 
 BUILD_HOST="hotswap"
 BUILD_USER="podbot"
-BUILD_AT="/home/podbot/app_build"
+BUILD_AT="/home/$BUILD_USER/app_build"
+
+# Used by umbrella projects only
+RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"
 
 PRODUCTION_HOSTS="hotswap" 
 PRODUCTION_USER="podbot" 
-DELIVER_TO="/home/podbot/app_release"
-
-RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"
+DELIVER_TO="/home/$PRODUCTION_USER/app_release"
