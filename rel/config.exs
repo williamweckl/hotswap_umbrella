@@ -6,6 +6,8 @@ Path.join(["rel", "plugins", "*.exs"])
 |> Path.wildcard()
 |> Enum.map(&Code.eval_file(&1))
 
+RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"
+
 use Mix.Releases.Config,
     # This sets the default release built by `mix release`
     default_release: :default,
@@ -45,7 +47,7 @@ end
 # will be used by default
 
 release :hotswap_umbrella do
-  set version: "0.1.1"
+  set version: "0.1.2"
   set applications: [
     :runtime_tools,
     hotswap: :permanent,
