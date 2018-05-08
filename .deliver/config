@@ -7,3 +7,5 @@ BUILD_AT="/home/podbot/app_build"
 PRODUCTION_HOSTS="hotswap" 
 PRODUCTION_USER="podbot" 
 DELIVER_TO="/home/podbot/app_release"
+
+RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"

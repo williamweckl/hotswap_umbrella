@@ -6,8 +6,6 @@ Path.join(["rel", "plugins", "*.exs"])
 |> Path.wildcard()
 |> Enum.map(&Code.eval_file(&1))
 
-RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"
-
 use Mix.Releases.Config,
     # This sets the default release built by `mix release`
     default_release: :default,
