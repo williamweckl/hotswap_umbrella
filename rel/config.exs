@@ -45,7 +45,7 @@ end
 # will be used by default
 
 release :hotswap_umbrella do
-  set version: "0.1.0"
+  set version: "0.1.1"
   set applications: [
     :runtime_tools,
     hotswap: :permanent,
