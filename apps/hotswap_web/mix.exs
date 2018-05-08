@@ -4,7 +4,7 @@ defmodule HotswapWeb.Mixfile do
   def project do
     [
       app: :hotswap_web,
-      version: "0.0.1",
+      version: "0.1.1",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
       deps_path: "../../deps",
@@ -24,7 +24,7 @@ defmodule HotswapWeb.Mixfile do
   def application do
     [
       mod: {HotswapWeb.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :edeliver, :distillery]
     ]
   end
 
@@ -43,7 +43,9 @@ defmodule HotswapWeb.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:hotswap, in_umbrella: true},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:edeliver, "~> 1.4.3"},
+      {:distillery, "~> 1.4"}
     ]
   end
 
