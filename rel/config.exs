@@ -48,6 +48,7 @@ release :hotswap do
   set version: "0.1.5"
   set applications: [
     :runtime_tools,
+    :edeliver,
     hotswap: :permanent,
     hotswap_web: :permanent
   ]
