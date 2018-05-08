@@ -4,7 +4,7 @@ defmodule Hotswap.Mixfile do
   def project do
     [
       app: :hotswap,
-      version: "0.1.2",
+      version: "0.1.3",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
       deps_path: "../../deps",
@@ -36,8 +36,8 @@ defmodule Hotswap.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:edeliver, "~> 1.4.3"},
-      {:distillery, "~> 1.4"}
+      {:edeliver, "~> 1.5.0"},
+      {:distillery, "~> 1.5.2"}
     ]
   end
 

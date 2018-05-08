@@ -4,7 +4,7 @@ defmodule HotswapWeb.Mixfile do
   def project do
     [
       app: :hotswap_web,
-      version: "0.1.2",
+      version: "0.1.4",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
       deps_path: "../../deps",
@@ -44,8 +44,8 @@ defmodule HotswapWeb.Mixfile do
       {:gettext, "~> 0.11"},
       {:hotswap, in_umbrella: true},
       {:cowboy, "~> 1.0"},
-      {:edeliver, "~> 1.4.3"},
-      {:distillery, "~> 1.4"}
+      {:edeliver, "~> 1.5.0"},
+      {:distillery, "~> 1.5.2"}
     ]
   end
 

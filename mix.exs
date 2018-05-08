@@ -4,7 +4,7 @@ defmodule Hotswap.Umbrella.Mixfile do
   def project do
     [
       apps_path: "apps",
-      version: "0.1.2",
+      version: "0.1.4",
       start_permanent: Mix.env == :prod,
       deps: deps()
     ]
@@ -24,8 +24,8 @@ defmodule Hotswap.Umbrella.Mixfile do
   # and cannot be accessed from applications inside the apps folder
   defp deps do
     [
-      {:edeliver, "~> 1.4.3"},
-      {:distillery, "~> 1.4"}
+      {:edeliver, "~> 1.5.0"},
+      {:distillery, "~> 1.5.2"}
     ]
   end
 end

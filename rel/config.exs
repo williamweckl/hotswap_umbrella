@@ -44,8 +44,8 @@ end
 # when running `mix release`, the first release in the file
 # will be used by default
 
-release :hotswap_umbrella do
-  set version: "0.1.2"
+release :hotswap do
+  set version: "0.1.3"
   set applications: [
     :runtime_tools,
     hotswap: :permanent,
