@@ -4,7 +4,7 @@ defmodule Hotswap.Umbrella.Mixfile do
   def project do
     [
       apps_path: "apps",
-      version: "0.1.4",
+      version: "0.1.5",
       start_permanent: Mix.env == :prod,
       deps: deps()
     ]

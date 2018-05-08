@@ -5,7 +5,7 @@ BUILD_USER="podbot"
 BUILD_AT="/home/$BUILD_USER/app_build"
 
 # Used by umbrella projects only
-RELEASE_DIR="$BUILD_AT/apps/$APP/rel/$APP"
+RELEASE_DIR="$BUILD_AT/rel/$APP"
 
 PRODUCTION_HOSTS="hotswap" 
 PRODUCTION_USER="podbot" 

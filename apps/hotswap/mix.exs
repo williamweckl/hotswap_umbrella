@@ -4,7 +4,7 @@ defmodule Hotswap.Mixfile do
   def project do
     [
       app: :hotswap,
-      version: "0.1.3",
+      version: "0.1.5",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
       deps_path: "../../deps",
