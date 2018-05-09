@@ -45,7 +45,7 @@ end
 # will be used by default
 
 release :hotswap do
-  set version: "0.1.5"
+  set version: "0.1.6"
   set applications: [
     :runtime_tools,
     :edeliver,
